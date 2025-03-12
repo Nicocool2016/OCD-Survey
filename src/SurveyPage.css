@@ -1,0 +1,87 @@
+/* 📌 Center hele spørgeskemaet */
+.survey-container {
+  background: #1C1F26; /* Mørk baggrund */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 400px;
+  margin: 50px auto;
+}
+
+/* 📌 Styling af overskriften */
+.survey-container h2 {
+  color: #FFA500; /* Orange farve */
+  margin-bottom: 20px;
+}
+
+/* 📌 Styling af labels */
+.survey-container label {
+  display: block;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+/* 📌 Styling af inputfelter */
+.survey-container input[type="text"],
+.survey-container input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #3E4957;
+  border-radius: 6px;
+  font-size: 14px;
+  background-color: #232A34;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.survey-container input::placeholder {
+  color: #bbbbbb;
+}
+
+/* 📌 Checkbox styling */
+.survey-container input[type="checkbox"] {
+  transform: scale(1.2);
+  margin-left: 10px;
+}
+
+/* 📌 Orange knap til "Send svar" */
+.survey-container button {
+  width: 100%;
+  padding: 12px;
+  background-color: #FFA500; /* Orange farve */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 15px;
+}
+
+.survey-container button:hover {
+  background-color: #FF8800;
+}
+/* 📌 Checkbox og label side om side */
+/* 📌 Juster checkboxen, så den står pænt til højre */
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Afstand mellem tekst og checkbox */
+  margin-top: 15px;
+  font-size: 16px;
+  color: white;
+}
+
+/* 📌 Gør checkboxen pænere */
+.checkbox-container input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: orange; /* Gør checkboxen orange */
+}
+
+
+

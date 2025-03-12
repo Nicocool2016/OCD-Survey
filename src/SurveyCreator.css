@@ -1,0 +1,70 @@
+/* Styling for survey container */
+.survey-creator {
+    background: #1C1F26;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 400px;
+    margin: auto;
+  }
+  
+  /* Headline */
+  .survey-creator h2 {
+    color: #FFA500; /* Orange */
+    margin-bottom: 20px;
+  }
+  
+  /* Label */
+  .survey-creator label {
+    display: block;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 5px;
+    text-align: left;
+  }
+  
+  /* Input field */
+  .survey-creator input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #3E4957;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: #232A34;
+    color: white;
+    margin-bottom: 15px;
+  }
+  
+  /* Orange button */
+  .survey-creator button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+  }
+  
+  /* Orange color for send button */
+  .survey-creator button:first-of-type {
+    background-color: #FFA500;
+    color: white;
+  }
+  
+  .survey-creator button:first-of-type:hover {
+    background-color: #FF8800;
+  }
+  
+  /* Red color for back button */
+  .survey-creator button:last-of-type {
+    background-color: #FF0000;
+    color: white;
+  }
+  
+  .survey-creator button:last-of-type:hover {
+    background-color: #CC0000;
+  }
+  
