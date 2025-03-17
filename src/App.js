@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import './App.css';
 import AdminPage from './AdminPage';
 import UserPage from './UserPage';
-import MailPage from './MailPage'; // Ny mail-side
-import SurveyCreator from './SurveyCreator'; // Import the Survey Creator page
+import MailPage from './MailPage'; 
+import SurveyCreator from './SurveyCreator'; 
 import SurveyPage from './SurveyPage';
 
 
 function App() {
-  const [role, setRole] = useState(null); // Styrer hvilken side der vises
+  const [role, setRole] = useState(null); 
   const [error, setError] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -25,7 +25,6 @@ function App() {
       return;
     }
 
-    // Simpel login-logik
     if (email === 'admin@example.com' && password === 'admin123') {
       setRole('admin');
     } else if (email === 'user@example.com' && password === 'user123') {
@@ -38,7 +37,6 @@ function App() {
     setError('');
   };
 
-  // **📌 Skift mellem sider med useState**
   if (role === 'admin') return <AdminPage setRole={setRole} />;
   if (role === 'user') return <UserPage setRole={setRole} />;
   if (role === 'mail') return <MailPage setRole={setRole} />;
@@ -52,7 +50,6 @@ function App() {
     return <SurveyPage />;
   }
   
-  // **📌 Login-skærm**
   return (
     <div className="App">
       <header className="App-header">

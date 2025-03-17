@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import './SurveyPage.css';
 
 const SurveyPage = () => {
-  // ✅ Only one state for answers is needed
   const [answers, setAnswers] = useState({
     navn: '',
     efternavn: '',
@@ -13,7 +12,6 @@ const SurveyPage = () => {
 
   
 
-  // ✅ Handle changes to form inputs
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
     setAnswers(prev => ({
@@ -22,7 +20,6 @@ const SurveyPage = () => {
     }));
   };
 
-  // ✅ Submit function
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -44,7 +41,6 @@ const SurveyPage = () => {
     }
   };
 
-  // ✅ Submitted state (only boolean)
   const [submitted, setSubmitted] = useState(false);
 
   return (

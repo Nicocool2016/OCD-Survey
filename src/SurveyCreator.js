@@ -6,7 +6,6 @@ const SurveyCreator = ({ setRole }) => {
   const [email, setEmail] = useState('');
   const [surveyLink, setSurveyLink] = useState(null);
 
-  // Generate a unique link for the survey
   const generateSurveyLink = () => {
     const uniqueId = Math.random().toString(36).substr(2, 9);
     const link = `http://localhost:3000/survey/${uniqueId}`;
@@ -14,7 +13,6 @@ const SurveyCreator = ({ setRole }) => {
     return link;
   };
 
-  // Send email with survey link
   const sendSurveyEmail = () => {
     if (!email.includes('@')) {
       alert('Indtast en gyldig e-mailadresse.');
@@ -29,10 +27,10 @@ const SurveyCreator = ({ setRole }) => {
     };
 
     emailjs.send(
-      'service_u1pmp3d',   // Your EmailJS Service ID
-      'template_8245b0c',   // Your EmailJS Template ID
+      '',   // Your EmailJS Service ID
+      '',   // Your EmailJS Template ID
       templateParams,
-      't7vBLZxSbbH_RCdEg'  // Your EmailJS Public Key
+      ''  // Your EmailJS Public Key
     ).then(
       (response) => {
         console.log("Email sendt!", response.status, response.text);

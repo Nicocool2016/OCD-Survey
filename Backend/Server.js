@@ -9,19 +9,19 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
-// ✅ Correct Database Configuration
+
 const dbConfig = {
-    server: 'localhost',
-    database: 'SurveyDB',
-    user: 'sa',
-    password: 'test123456789!', // your actual password here
+    server: '',
+    database: '',
+    user: '',
+    password: '', 
     options: {
         encrypt: false,
         trustServerCertificate: true
     }
 };
 
-// ✅ Connect to Database
+
 sql.connect(dbConfig)
     .then(() => {
         console.log('Connected to SQL Server ✅');
@@ -30,7 +30,7 @@ sql.connect(dbConfig)
         console.error('Database connection error ❌:', err);
     });
 
-// ✅ POST route to submit survey
+
 app.post('/submit-survey', async (req, res) => {
     const { navn, efternavn, email, virksomhed, infrastruktur } = req.body;
 
@@ -53,7 +53,7 @@ app.post('/submit-survey', async (req, res) => {
     }
 });
 
-// ✅ GET route to fetch all responses (optional)
+
 app.get('/survey-responses', async (req, res) => {
     try {
         const request = new sql.Request();
@@ -65,13 +65,13 @@ app.get('/survey-responses', async (req, res) => {
     }
 });
 
-// ✅ Fix your GET route with random survey ID
+
 app.get('/survey/:id', (req, res) => {
     const surveyId = req.params.id;
     res.send(`Survey ID requested is ${surveyId}`);
 });
 
-// ✅ Start your server on port 5000
+
 const PORT = 5000;
 app.listen(PORT, () => {
     console.log(`Server running successfully on http://localhost:${PORT} 🚀`);

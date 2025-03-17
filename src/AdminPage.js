@@ -4,12 +4,12 @@ import logo from './OCD-Logo.png';
 
 function AdminPage({ setRole }) {
   const customers = [
-    { id: 1, name: 'Nicolai' },
-    { id: 2, name: 'Anne' },
-    { id: 3, name: 'Simon' },
-    { id: 4, name: 'Laila' },
-    { id: 5, name: 'Mikkel' },
-    { id: 6, name: 'Birgitte' },
+    { id: 1, name: 'User 1' },
+    { id: 2, name: 'User 2' },
+    { id: 3, name: 'User 3' },
+    { id: 4, name: 'User 4' },
+    { id: 5, name: 'User 5' },
+    { id: 6, name: 'User 6' },
   ];
 
   return (
@@ -17,13 +17,13 @@ function AdminPage({ setRole }) {
       <aside className="sidebar">
         <img src={logo} alt="OCD Logo" className="logo" />
         <nav className="menu">
-          {/* Button to log out */}
+         
           <button onClick={() => setRole(null)}>Log ud</button>
 
-          {/* Button to go to the Mail page */}
+          
           <button onClick={() => setRole('mail')}>Mail</button>
 
-          {/* Button to go to the Survey Creator page */}
+          
           <button onClick={() => setRole('surveyCreator')}>Opret Spørgeskema</button>
         </nav>
       </aside>

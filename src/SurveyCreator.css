@@ -1,4 +1,4 @@
-/* Styling for survey container */
+
 .survey-creator {
     background: #1C1F26;
     padding: 30px;
@@ -9,13 +9,12 @@
     margin: auto;
   }
   
-  /* Headline */
+ 
   .survey-creator h2 {
-    color: #FFA500; /* Orange */
+    color: #FFA500;
     margin-bottom: 20px;
   }
   
-  /* Label */
   .survey-creator label {
     display: block;
     font-weight: bold;
@@ -24,7 +23,6 @@
     text-align: left;
   }
   
-  /* Input field */
   .survey-creator input {
     width: 100%;
     padding: 10px;
@@ -36,7 +34,6 @@
     margin-bottom: 15px;
   }
   
-  /* Orange button */
   .survey-creator button {
     width: 100%;
     padding: 12px;
@@ -48,7 +45,6 @@
     margin-bottom: 10px;
   }
   
-  /* Orange color for send button */
   .survey-creator button:first-of-type {
     background-color: #FFA500;
     color: white;
@@ -58,7 +54,6 @@
     background-color: #FF8800;
   }
   
-  /* Red color for back button */
   .survey-creator button:last-of-type {
     background-color: #FF0000;
     color: white;

@@ -12,7 +12,7 @@ const MailPage = () => {
     e.preventDefault();
 
     const templateParams = {
-      to_email: toEmail, // ← Ændret: Nu sendes til den e-mail, som brugeren skriver
+      to_email: toEmail, 
       to_name: toEmail, 
       from_name: "OrangeCyberdefense",
       message: message,
@@ -20,10 +20,10 @@ const MailPage = () => {
     
 
     emailjs.send(
-      'service_u1pmp3d', // Service ID
-      'template_0ne4goa', // Template ID
+      '', // Service ID
+      '', // Template ID
       templateParams,
-      't7vBLZxSbbH_RCdEg' // Public Key
+      '' // Public Key
     ).then(
       (response) => {
         console.log('✅ E-mail sendt!', response.status, response.text);
